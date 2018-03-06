@@ -10,4 +10,4 @@ Join field_values on field_values.field_id=doc_fields.id and document.id=field_v
 where (field_values.field_id=1 or field_values.field_id=2) and doc_fields.doctype_id=1
 group by name, surname, patronimic, phone_number, credit_number, field_value
 
---Запрос написан для SQL Server Management Studio
+--РЎРєСЂРёРїС‚ РЅР°РїРёСЃР°РЅ РґР»СЏ SQL Server Management Studio
