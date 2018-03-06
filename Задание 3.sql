@@ -1,3 +1,5 @@
+--Скрипт написан для SQL Server Management Studio
+
 select   name, surname, patronimic, phone_number, credit_number, field_value
 from clients
 join contacts on contacts.client_id = clients.id
@@ -10,4 +12,4 @@ Join field_values on field_values.field_id=doc_fields.id and document.id=field_v
 where (field_values.field_id=1 or field_values.field_id=2) and doc_fields.doctype_id=1
 group by name, surname, patronimic, phone_number, credit_number, field_value
 
---Скрипт написан для SQL Server Management Studio
+
